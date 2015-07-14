@@ -10,6 +10,10 @@
     float: right !important;
 }
 
+.u-textSmall {
+  font-size: 1.2rem !important;
+}
+
 .Hero {
 	background-image: url(/assets/img/hero-tour.png);
     position: absolute;

@@ -1,6 +1,3 @@
 # Cloud66
 
-Cloud 66 branding based on default 'Casper theme'
-
-
-## Copyright & License
+Cloud 66 branded theme for ghost
