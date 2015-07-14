@@ -1,0 +1,348 @@
+/* ==========================================================================
+   BUTTON CLASS
+   ========================================================================== */
+
+/*
+    References for BEM & SUIT SYNTAX
+    --------------------------------
+    https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md
+
+*/
+
+/**
+ * The button classes are best applied to links, buttons, and submit inputs.
+ * These components can be used in forms, as calls to action, or as part of the
+ * general UI of the site/app.
+ *
+ * Recommended use:
+ *
+ * <a class="Button [Button--modifier]" role="button" href="[url]">Button text</a>
+ * <button class="Button [Button--modifier]" type="submit">Button text</button>
+ * <input class="Button [Button--modifier]" type="submit" value="Button text">
+ */
+
+/**
+ * 1. Corrects inability to style clickable `input` types in iOS.
+ * 2. Normalize `box-sizing` across all elements that this component could be
+ *    applied to.
+ * 3. Inherit text color from ancestor.
+ * 4. Inherit font styles from ancestor.
+ * 5. Normalize `line-height`. For `input`, it can't be changed from `normal` in Firefox 4+.
+ * 6. Prevent button text from being selectable.
+ * 7. Make sure `input` will wrap text across multiple lines.
+ */
+
+.Button {
+  -webkit-appearance: none;
+  /* 1 */
+  background: transparent;
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  /* 2 */
+  color: inherit;
+  /* 3 */
+  cursor: pointer;
+  display: inline-block;
+  font: inherit;
+  font-weight: 500;
+  /* 4 */
+  line-height: normal;
+  /* 5 */
+  margin: 0;
+  padding: 0.6em 0.66em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* 6 */
+  white-space: normal;
+  /* 7 */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+
+  @include transition ( background-color 0.3s linear, border-color 0.3s linear );
+  @include transition ( color none );
+
+   @include breakpoint(phone)  {
+    width: 80%;
+   }
+}
+
+/**
+ * Remove excess padding and border in Firefox 4+
+ */
+
+.Button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Work around a Firefox/IE bug where the transparent `button` background
+ * results in a loss of the default `button` focus styles.
+ */
+
+.Button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+/**
+ * UI states
+ */
+
+.Button:hover,
+.Button:focus,
+.Button:active {
+  color: #666;
+  text-decoration: none;
+
+
+   .caret {
+    opacity: 1;
+   }
+
+}
+
+.Button:disabled,
+.Button.is-disabled {
+  cursor: default;
+  opacity: 0.6;
+  color: #666;
+  border: 1px solid #BFBFBF;
+  background: #f0f0f0;
+}
+
+.Button:disabled:hover,
+.Button.is-disabled:hover {
+  cursor: default;
+  opacity: 0.6;
+  color: #666;
+  background: #eee;
+}
+
+
+/*
+
+    <a class="Button" href="{{url}}">Sign up</a>
+    <button class="Button Button--default is-disabled" type="button">Close</button>
+    <input class="Button Button--primary is-pressed" type="submit" value="Submit">
+
+*/
+
+/**
+ * Button Defaukt: Grey
+ *
+ */
+
+.Button--default {
+  background-color: #eee;
+  color: #444;
+}
+
+.Button--default:hover,
+.Button--default:focus,
+.Button--default:active,
+.Button--default.is-pressed {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+.Button--default:focus {
+  border-color: #069;
+  outline: 0;
+}
+
+.Button--default:active,
+.Button--default.is-pressed {
+  background-color: #ccc;
+}
+
+/**
+ * Button Primary Action: Green
+ *
+ */
+
+.Button--pri {
+  background-color: #43ba47;
+  color: #fff;
+  border-color: #43ba47;
+  border-radius: 2px;
+  border: 2px solid #43ba47;
+}
+
+.Button--pri:hover,
+.Button--pri:focus,
+.Button--pri:active,
+.Button--pri.is-pressed {
+  background-color: #359539;
+  border: 2px solid #359539;
+  color: #fff;
+}
+
+.Button--pri:focus {
+  background-color: #5AB55A;
+  border-color: #5AB55A;
+  outline: 0;
+}
+
+.Button--pri:active,
+.Button--pri.is-pressed {
+  background-color: #5AB55A;
+  color: #fff;
+}
+
+.Button--outlined {
+  border: 2px solid $color-green;
+  background: #fff;
+  color: $color-green;
+}
+.Button--outlined:hover,
+.Button--outlined:focus,
+.Button--outlined:active,
+.Button--outlined.is-pressed {
+  color: darken( $color-green, 10%);
+  border-color: darken( $color-green, 10%);
+  background: #fff;
+}
+.Button--outlined:focus {
+  background-color: #fff;
+}
+
+/**
+ * Button Secondary Action: Blue
+ *
+ */
+
+.Button--sec {
+  background-color: #2996cc;
+  color: #fff;
+  border: 2px solid #2996cc;
+  border-radius: 2px;
+}
+
+.Button--sec:hover,
+.Button--sec:focus,
+.Button--sec:active,
+.Button--sec.is-pressed {
+  background-color: #2586B7;
+  border-color: #2586B7;
+  color: #fff;
+}
+
+.Button--sec:focus {
+  background-color: #257CA8;
+  outline: 0;
+}
+
+.Button--sec:active,
+.Button--sec.is-pressed {
+  background-color: #257CA8;
+}
+
+
+/**
+ * Button Cancel: Cancel
+ *
+ */
+
+.Button--cancel {
+  position: relative;
+  top: 2px;
+  margin-left: 1.2em !important;
+  background: transparent;
+  color: #999;
+  border-color: transparent;
+  border-radius: 2px;
+}
+
+.Button--cancel:hover,
+.Button--cancel:focus,
+.Button--cancel:active,
+.Button--cancel.is-pressed {
+  background-color: transparent;
+  color: #666;
+}
+
+.Button--cancel:focus {
+  background-color: transparent;
+  outline: 0;
+}
+
+.Button--cancel:active,
+.Button--cancel.is-pressed {
+  background-color: transparent;
+}
+
+
+/**
+ * Modifier: large buttons
+ */
+
+.Button--large {
+  font-size: 1.7rem;
+  padding: 0.8em 1.5em;
+}
+
+.Button--xlarge {
+  font-size: 2rem;
+  padding: 1em 2.5em;
+}
+
+.Button--wide {
+  min-width: 16em;
+}
+
+/**
+ * Modifier: MEdium buttons
+ */
+
+.Button--medium {
+  font-size: 1.5rem;
+  padding: 0.65em 1.5em;
+}
+
+/**
+ * Modifier: small buttons
+ */
+
+.Button--small {
+  font-size: 1.5rem;
+  padding: 0.6em 1.5em;
+}
+
+/**
+ * Modifier: Actions e.g. sidebar Deploy button and dropdown
+ */
+
+ .Button--side {
+    font-weight: bold;
+    // margin-bottom: 2.5rem;
+    font-size: 1.3rem;
+    padding: 0.75em 0.75em;
+}
+
+/**
+ * Modifier: action e.g. buttons, forms <input type="submit">
+ */
+
+ .Button--action {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+ }
+
+ /**
+ * Modifier: action e.g. buttons, forms <input type="submit">
+ */
+
+.Button--container {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}

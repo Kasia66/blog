@@ -1,0 +1,24 @@
+@import url("buttons.css");
+@import url("typography.css");
+@import url("nav.css");
+
+.u-objLeft {
+    float: left !important;
+}
+
+.u-objRight {
+    float: right !important;
+}
+
+.Hero {
+	background-image: url(/assets/img/hero-tour.png);
+    position: absolute;
+    top: 0;
+	left: 0;
+    height: 600px;
+    width: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 2560px 600px;
+    z-index: -1;
+}

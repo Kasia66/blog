@@ -1,0 +1,58 @@
+/*  ---------------------------------------------- */
+/*   GLOBAL TOP NAV CONTAINER
+/*  ---------------------------------------------- */
+.NavGlobal {
+	overflow: hidden;
+	position: relative;
+	vertical-align: middle;
+	padding: 0 50px 0 116px;
+}
+
+/*  ---------------------------------------------- */
+/*   LOGO
+/*  ---------------------------------------------- */
+.Banner-logo {
+	position: absolute;
+	top: 25px;
+	left: 42px;
+	background-image: url("/assets/img/cloud66.svg");
+	background-size: contain;
+	height: 54px;
+	width: 54px;
+	text-indent: -99999px;
+}
+
+/*  ---------------------------------------------- */
+/*   NAV
+/*  ---------------------------------------------- */
+.NavPrimary {
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.NavPrimary-item {
+	padding: 0 14px;
+	display: inline-block;
+}
+
+.NavPrimary-link {
+	font-family: "Montserrat",sans-serif;
+	display: block;
+	font-size: 2rem;
+	line-height: 87px;
+}
+
+.NavPrimary-item--button {
+	padding-top: 22px;
+}
+
+.NavPrimary-button {
+    background: #43ba47;
+    color: #fff;
+    font-weight: 500;
+	font-size: 1.5rem;
+    padding: 0.6em 1.6em;
+	border-radius: 0;
+}
