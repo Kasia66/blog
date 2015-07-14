@@ -44,6 +44,10 @@
 	line-height: 87px;
 }
 
+.NavPrimary-link.is-active {
+	color: #359539;
+}
+
 .NavPrimary-item--button {
 	padding-top: 22px;
 }
