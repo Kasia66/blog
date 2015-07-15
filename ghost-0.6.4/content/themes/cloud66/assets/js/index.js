@@ -53,7 +53,8 @@ C66.blog = (function ( $, window ) {
 
         // $(".scroll-down").arctic_scroll();
 
-        $('#js_toggle_side_menu').on("click", function(e){
+        $('#js_toggle_side_menu, .nav-close').on("click", function(e){
+            console.log('toggle class');
             e.preventDefault();
             $("body").toggleClass("nav-opened nav-closed");
         });
