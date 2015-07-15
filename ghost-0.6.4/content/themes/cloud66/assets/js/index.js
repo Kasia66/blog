@@ -1,14 +1,52 @@
 /**
- * Main JS file for Casper behaviours
+ * Main JS file
  */
 
+/**
+* C66 blog Namespace
+*/
+var C66 = window.C66 || {};
+    C66.blog  = {};
+
+C66.blog = (function ( $, window ) {
+    "use strict";
+
+    var $document = $(document);
+    // global config data
+    var config = {
+        $bannerEl: $('#js_banner'),
+        bannerScrollClass: 'Banner--hasScrolled',
+        amountToScoll: 10
+    };
+
+    var init = function() {
+        console.log('C66.blog.init called');
+        bindEvents();
+    };
+
+    var bindEvents = function() {
+        $document.scroll(function() {
+            config.$bannerEl.toggleClass( config.bannerScrollClass, $document.scrollTop() >= config.amountToScoll );
+        });
+    };
+
+    /* public methods */
+    return {
+        init: init,
+    };
+
+})( window.jQuery, window );
+
 /* globals jQuery, document */
-(function ($, undefined) {
+/* default ghost theme */
+(function( $ ) {
     "use strict";
 
     var $document = $(document);
 
+
     $document.ready(function () {
+        C66.blog.init();
 
         var $postContent = $(".post-content");
         $postContent.fitVids();
@@ -19,11 +57,15 @@
             e.preventDefault();
             $("body").toggleClass("nav-opened nav-closed");
         });
-
     });
 
-    // Arctic Scroll by Paul Adam Davis
-    // https://github.com/PaulAdamDavis/Arctic-Scroll
+})(jQuery);
+
+
+
+(function( $ ) {
+    "use strict";
+
     $.fn.arctic_scroll = function (options) {
 
         var defaults = {

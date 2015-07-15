@@ -1,51 +1,11 @@
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
-{{! The big featured header }}
-<div id="js_banner" class="Banner Banner--fixed">
-    <nav class="NavGlobal NavGlobal--fixed">
-        <a class="Banner-logo" rel="home" href="/"></a>
 
-        <ul class="NavPrimary  NavPrimary--marketing  u-inlineBlock">
-            <li class="NavPrimary-item">
-                <a class="NavPrimary-link is-active" href="http://www.cloud66.com/tour">Blog</a>
-            </li>
-            <li class="NavPrimary-item">
-                <a class="NavPrimary-link" href="http://www.cloud66.com/tour">Tour</a>
-            </li>
-            <li class="NavPrimary-item">
-                <a class="NavPrimary-link" href="http://www.cloud66.com/features">Features</a>
-            </li>
-            <li class="NavPrimary-item">
-                <a class="NavPrimary-link" href="http://www.cloud66.com/how-it-works">How it Works</a>
-            </li>
-            <li class="NavPrimary-item">
-                <a class="NavPrimary-link" href="http://www.cloud66.com/pricing">Pricing</a>
-            </li>
-        </ul>
 
-        <ul class="NavPrimary  NavPrimary--app  u-objRight">
-            <li class="NavPrimary-item--button">
-                <a class="Button Button--pri NavPrimary-button" href="#">Sign Up</a>
-            </li>
-        </ul>
-    </nav>
-</div>
+{{! Common nav partials/header.hbs }}
+{{> "header"}}
 
-<header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
-    <nav class="main-nav overlay clearfix">
-        {{#if @blog.navigation}}
-            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
-        {{/if}}
-    </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">Full Stack Container Management</h1>
-            <h2 class="page-description">Everything you need to build, manage and maintain containers in production on your own servers and any cloud</h2>
-        </div>
-    </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
-</header>
 
 {{! The main content area on the homepage }}
 <main id="content" class="content" role="main">

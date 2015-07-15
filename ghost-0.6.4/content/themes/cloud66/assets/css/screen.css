@@ -532,7 +532,7 @@ body.nav-opened .site-wrapper {
 .main-nav {
     position: relative;
     padding: 35px 40px;
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
 }
 
 .main-nav a {
@@ -796,6 +796,7 @@ body.nav-opened .nav {
 }
 
 .menu-button {
+    margin-top: 30px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -872,7 +873,7 @@ body.nav-opened .nav {
     right: 0;
     height: 70px;
     border: none;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%);
+    /*background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%);*/
 }
 .no-cover .main-nav.overlay {
     background: none;
@@ -1084,6 +1085,7 @@ body.nav-opened .nav {
    creating horizontal scroll - slight hack due to imperfections
    with browser width % calculations and rounding */
 .post-template .content {
+    padding-top: 200px;
     overflow: hidden;
 }
 
@@ -1530,7 +1532,7 @@ body.nav-opened .nav {
 }
 
 .older-posts {
-    right: 0;
+    left: 0;
 }
 
 .page-number {
@@ -1540,7 +1542,7 @@ body.nav-opened .nav {
 }
 
 .newer-posts {
-    left: 0;
+    right: 0;
 }
 
 .older-posts:hover,

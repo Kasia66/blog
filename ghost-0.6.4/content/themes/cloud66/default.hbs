@@ -25,9 +25,12 @@
 </head>
 <body class="{{body_class}} nav-closed">
     <div class="Hero"></div>
+
     {{navigation}}
 
     <div class="site-wrapper">
+        {{! Common nav partials/nav-banner.hbs }}
+        {{> "nav-banner"}}
 
         {{! Everything else gets inserted here }}
         {{{body}}}
