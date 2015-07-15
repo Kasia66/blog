@@ -21,12 +21,20 @@ C66.blog = (function ( $, window ) {
 
     var init = function() {
         console.log('C66.blog.init called');
+        var $postContent = $(".post-content");
+        $postContent.fitVids();
         bindEvents();
     };
 
     var bindEvents = function() {
         $document.scroll(function() {
             config.$bannerEl.toggleClass( config.bannerScrollClass, $document.scrollTop() >= config.amountToScoll );
+        });
+
+        $('#js_toggle_side_menu, .nav-close').on("click", function(e){
+            console.log('toggle class');
+            e.preventDefault();
+            $("body").toggleClass("nav-opened nav-closed");
         });
     };
 
@@ -47,17 +55,7 @@ C66.blog = (function ( $, window ) {
 
     $document.ready(function () {
         C66.blog.init();
-
-        var $postContent = $(".post-content");
-        $postContent.fitVids();
-
         // $(".scroll-down").arctic_scroll();
-
-        $('#js_toggle_side_menu, .nav-close').on("click", function(e){
-            console.log('toggle class');
-            e.preventDefault();
-            $("body").toggleClass("nav-opened nav-closed");
-        });
     });
 
 })(jQuery);
