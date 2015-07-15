@@ -1,7 +1,7 @@
 /*  ---------------------------------------------- */
 /*   BANNER
 /*  ---------------------------------------------- */
-@media only screen and (min-width : 1025px) {
+@media only screen and (min-width : 1024px) {
 	.main-header {
 		padding-top: 102px;
 	}
@@ -12,7 +12,7 @@
 }
 
 /* Fixed position banner */
-@media only screen and (min-width : 1025px) {
+@media only screen and (min-width : 1024px) {
 	.Banner--fixed {
 		position: fixed;
 		top: 0;
@@ -53,9 +53,21 @@
 	text-indent: -99999px;
 }
 
+
 /*  ---------------------------------------------- */
 /*   NAV
 /*  ---------------------------------------------- */
+.NavPrimary--marketing li {
+	display: none !important;
+}
+
+@media only screen and (min-width : 1024px) {
+	.NavPrimary--marketing li {
+		display: inline-block !important;
+	}
+}
+
+
 .NavPrimary {
 	display: inline-block;
 	list-style: none;
@@ -71,8 +83,14 @@
 .NavPrimary-link {
 	font-family: "Montserrat",sans-serif;
 	display: block;
-	font-size: 2rem;
-	line-height: 87px;
+	font-size: 1.6rem;
+	/*line-height: 87px;*/
+}
+@media only screen and (min-width : 1024px) {
+	.NavPrimary-link {
+		line-height: 87px;
+		font-size: 2rem;
+	}
 }
 
 .NavPrimary-link.is-active {

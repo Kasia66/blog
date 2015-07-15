@@ -3,6 +3,10 @@
 @import url("nav.css");
 @import url("grid.css");
 
+.post-content {
+    /*overflow: hidden;*/
+}
+
 /*------------------------------------*\
     UTILITY CLASSES
 \*------------------------------------*/
@@ -33,15 +37,21 @@
     box-sizing: border-box;
 }
 
-/*------------------------------------*\
-    BLOCKS (BEM)
-\*------------------------------------*/
+.u-noBorder {
+    border: none !important;
+}
 
-/*
-    HERO - Containing background
-*/
+/*---------------------------------------------------*\
+    BLOCKS (BEM) - SUIT Naming conventions
+\*---------------------------------------------------*/
+
+
+/*------------------------------------*\
+    HERO
+    Absolutely Positioned  bg image
+\*------------------------------------*/
 .Hero {
-	background-image: url(/assets/img/hero-tour.png);
+    background-image: url(/assets/img/hero-tour.png);
     position: absolute;
     top: 0;
 	left: 0;
@@ -54,13 +64,14 @@
 }
 
 .post-template .Hero {
+    background-image: url(/assets/img/hero-tour.png);
     top: -270px;
 }
 
 
-/*
-    SECTION
-*/
+/*------------------------------------*\
+    SECTION (BEM)
+\*------------------------------------*/
 .Section {
     margin-top: 2.6em;
 }
@@ -69,9 +80,62 @@
 }
 
 
-/*
+/*------------------------------------*\
     MODULE
-*/
+\*------------------------------------*/
 .Module {
     padding: 2.8em 0;
+}
+
+/*------------------------------------*\
+    FORM
+\*------------------------------------*/
+.Form {
+    margin: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+    .Form--inlined {
+        text-align: center;
+    }
+}
+
+.Form-field {
+    border: 1px solid #D3D3D3;
+    border-radius: 2px;
+    padding: 12px;
+    font-size: 1.8rem;
+    line-height: 1;
+    height: 23px;
+}
+.Form-field:focus,
+.Form-field:active {
+    outline: none;
+    border: 1px solid #BCBCBC;
+}
+@media only screen and (min-width: 1024px) {
+    .Form-field--inlined {
+        width: 82%;
+    }
+}
+
+::-webkit-input-placeholder {
+    line-height: normal;
+    font-weight: normal;
+    color: #aaa;
+    font-size: 1.8rem;
+}
+
+
+::-moz-placeholder {
+    line-height: normal;
+    font-weight: normal;
+    color: #aaa;
+    font-size: 1.8rem;
+}
+:-ms-input-placeholder {
+    line-height: normal;
+    font-weight: normal;
+    color: #aaa;
+    font-size: 1.8rem;
 }

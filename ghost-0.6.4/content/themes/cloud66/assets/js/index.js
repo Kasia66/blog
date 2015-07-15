@@ -51,7 +51,7 @@ C66.blog = (function ( $, window ) {
         var $postContent = $(".post-content");
         $postContent.fitVids();
 
-        $(".scroll-down").arctic_scroll();
+        // $(".scroll-down").arctic_scroll();
 
         $(".menu-button, .nav-cover, .nav-close").on("click", function(e){
             e.preventDefault();

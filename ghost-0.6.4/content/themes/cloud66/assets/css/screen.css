@@ -47,7 +47,7 @@ a:focus { outline: thin dotted; }
 a:active, a:hover { outline: 0; }
 h1 { font-size: 2em; margin: 0.67em 0; }
 abbr[title] { border-bottom: 1px dotted; }
-b, strong { font-weight: 700; }
+b, strong { font-weight: 600; }
 dfn { font-style: italic; }
 hr {
    -moz-box-sizing: content-box;
@@ -472,7 +472,7 @@ margin on the iframe, cause it breaks stuff. */
 .vertical {
     display: table-cell;
     vertical-align: middle;
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
 /* Wraps the main content & footer */
@@ -943,7 +943,7 @@ body.nav-opened .nav {
 
 /* Add a little circle in the middle of the border-bottom on our .post
    just for the lolz and stylepoints. */
-.post:after {
+/*.post:after {
     display: block;
     content: "";
     width: 7px;
@@ -956,7 +956,7 @@ body.nav-opened .nav {
     background: #FFF;
     border-radius: 100%;
     box-shadow: #FFF 0 0 0 5px;
-}
+}*/
 
 /*body:not(.post-template) .post-title {
     font-size: 3.6rem;
@@ -1069,6 +1069,12 @@ body.nav-opened .nav {
 
 .post-template .post-title {
     margin-bottom: 0;
+    line-height: 1.3;
+    margin-bottom: 0.4em;
+    font-size: 4rem;
+    font-weight: 600;
+    padding-right: 1em;
+    color: #43ba47 !important;
 }
 
 .post-template .post-meta {
@@ -1141,7 +1147,7 @@ body.nav-opened .nav {
 /* The author credit area after the post */
 .post-footer {
     position: relative;
-    margin: 6rem 0 0 0;
+    margin: 8rem 0 0 0;
     padding: 6rem 0 0 0;
     border-top: #EBF2F6 1px solid;
 }
@@ -1201,10 +1207,10 @@ body.nav-opened .nav {
 }
 
 .post-footer .share a {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     display: inline-block;
     margin: 1rem 1.6rem 1.6rem 0;
-    color: #BBC7CC;
+    color: #aaa;
     text-decoration: none;
 }
 
@@ -1218,6 +1224,12 @@ body.nav-opened .nav {
     color: #dd4b39;
 }
 
+.subs {
+    padding-top: 1em;
+}
+.subs h6 {
+    margin: 0 0 0.75em 0;
+}
 
 /* ==========================================================================
    6. Author profile
@@ -1365,7 +1377,7 @@ body.nav-opened .nav {
     -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .read-next-story {

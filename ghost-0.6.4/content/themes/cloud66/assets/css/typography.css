@@ -16,18 +16,41 @@ body {
 /*  ---------------------------------------------- */
 /*   HEADINGS
 /*  ---------------------------------------------- */
-h1, h2, h3, h4, h5, h6 {
-    color: #43ba47;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    line-height: 1.5;
     -webkit-text-rendering: optimizeLegibility;
     -moz-text-rendering: optimizeLegibility;
     -ms-text-rendering: optimizeLegibility;
     text-rendering: optimizeLegibility;
 }
 
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    color: #43ba47 !important;
+}
+
+/* overide legacy content  */
+.post-content h2 code,
+.post-content h2 kbd {
+    color: inherit;
+    font-family: inherit;
+    background: inherit;
+    font-weight: inherit;
+}
+
 h4, h5, h6 {
-    color: #000;
+    color: #2e2e2e;
 }
 
 h2 {
@@ -66,10 +89,12 @@ a:hover {
 /*  ---------------------------------------------- */
 /* LINKS */
 .post-content a {
-    border-bottom: 1px dotted #ccc;
+    color: #333;
+    border-bottom: 1px solid #8C8C8C;
 }
 .post-content a:hover {
-    border-bottom: 1px solid #43BA47;
+    border-bottom: 2px solid #000;
+    color: #000;
 }
 
 /* INLINE */
