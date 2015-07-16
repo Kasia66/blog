@@ -17,15 +17,18 @@ C66.blog = (function ( $, window ) {
 
     var init = function() {
         console.log('C66.blog.init called');
+        $("body").removeClass("preload");
         var $postContent = $(".post-content");
         $postContent.fitVids();
         bindEvents();
     };
 
     var bindEvents = function() {
-        $document.scroll(function() {
-            config.$bannerEl.toggleClass( config.bannerScrollClass, $document.scrollTop() >= config.amountToScoll );
-        });
+        if ( $(window).width() > 1023 ) {
+            $document.scroll(function() {
+                config.$bannerEl.toggleClass( config.bannerScrollClass, $document.scrollTop() >= config.amountToScoll );
+            });
+        }
 
         $('#js_toggle_side_menu, .nav-close').on("click", function(e){
             console.log('toggle class');

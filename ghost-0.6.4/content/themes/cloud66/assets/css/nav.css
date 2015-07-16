@@ -103,7 +103,7 @@
 @media only screen and (min-width : 1024px) {
 	.NavPrimary-link {
 		line-height: 87px;
-		font-size: 2rem;
+		font-size: 1.9rem;
 	}
 }
 
@@ -135,4 +135,31 @@
 	.NavPrimary-item--mobile {
 		display: inline-block;
 	}
+}
+
+/*  ---------------------------------------------- */
+/*   BANNER SCROLLED TRANSITION
+/*  ---------------------------------------------- */
+.NavPrimary-link,
+.Banner-logo,
+.NavPrimary-item--button {
+	transition: all 0.15s ease-in;
+}
+
+
+.Banner--hasScrolled .NavPrimary-link {
+	line-height: 66px;
+	font-size: 1.8rem;
+}
+.Banner--hasScrolled .Banner-logo {
+	transition: all 0.15s ease-in;
+	top: 18px;
+	left: 40px;
+	height: 44px;
+	width: 44px;
+}
+.Banner--hasScrolled .NavPrimary-item--button {
+	transition: all 0.15s ease-in;
+	padding-top: 12px;
+	padding-right: 0;
 }

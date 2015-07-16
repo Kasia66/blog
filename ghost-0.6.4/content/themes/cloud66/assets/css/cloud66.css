@@ -124,3 +124,13 @@
 .Module-title--relatedItem {
     margin: 0 0 -1.2em 0;
 }
+
+/*------------------------------------*\
+    MODULE
+\*------------------------------------*/
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}

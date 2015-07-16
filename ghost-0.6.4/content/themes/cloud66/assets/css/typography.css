@@ -31,8 +31,9 @@ h6 {
     text-rendering: optimizeLegibility;
 }
 @media only screen and (max-width: 500px) {
-    .post h2 {
-        font-size: 2rem !important;
+    .post h2,
+    .post h3 {
+        font-size: 1.9rem !important;
     }
 }
 
