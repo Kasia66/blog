@@ -39,6 +39,13 @@
 	padding: 0 50px 0 116px;
 }
 
+/* mobile displays */
+@media only screen and (max-width: 500px) {
+	.NavGlobal {
+		padding: 0 20px 0 116px;
+	}
+}
+
 /*  ---------------------------------------------- */
 /*   LOGO
 /*  ---------------------------------------------- */
@@ -90,6 +97,12 @@
 	.NavPrimary-link {
 		line-height: 87px;
 		font-size: 2rem;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.NavPrimary-item--lap {
+		display: none;
 	}
 }
 

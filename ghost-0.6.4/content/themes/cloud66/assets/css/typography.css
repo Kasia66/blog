@@ -30,6 +30,11 @@ h6 {
     -ms-text-rendering: optimizeLegibility;
     text-rendering: optimizeLegibility;
 }
+@media only screen and (max-width: 500px) {
+    h2 {
+        font-size: 2rem !important;
+    }
+}
 
 .post-content h1,
 .post-content h2,
@@ -82,6 +87,18 @@ a:hover {
     font-size: 3rem;
     font-weight: 500;
     color:  #43BA47 !important;
+}
+
+@media only screen and (max-width: 500px) {
+    .page-title {
+        font-size: 2.3rem !important;
+    }
+    .page-description {
+        font-size: 2rem !important;
+    }
+    .mobile-is-hidden {
+        display: none !important;
+    }
 }
 
 /*  ---------------------------------------------- */

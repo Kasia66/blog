@@ -472,8 +472,19 @@ margin on the iframe, cause it breaks stuff. */
 .vertical {
     display: table-cell;
     vertical-align: middle;
-    padding: 40px 0;
+    padding: 0 12px;
 }
+@media only screen and (min-width : 1024px) {
+    .vertical {
+        padding: 40px 0;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .vertical {
+        padding: 0 12px;
+    }
+}
+
 
 /* Wraps the main content & footer */
 .site-wrapper {
@@ -645,7 +656,7 @@ body.nav-opened .nav {
     counter-reset: item;
 }
 
-.nav li:before {
+/*.nav li:before {
     display: block;
     float: right;
     padding-right: 4%;
@@ -656,7 +667,7 @@ body.nav-opened .nav {
     color: #B8B8B8;
     content: counter(item, lower-roman);
     counter-increment: item;
-}
+}*/
 .nav li {
     margin: 0;
 }
@@ -1159,8 +1170,9 @@ body.nav-opened .nav {
 
 .post-footer p {
     margin: 1rem 0;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     line-height: 1.75em;
+    color: #777;
 }
 
 /* list of author links - location / url */
@@ -1188,11 +1200,13 @@ body.nav-opened .nav {
 
 .post-footer h4 a {
     color: #2e2e2e;
+    border-bottom: 1px dotted #ccc;
     text-decoration: none;
 }
 
 .post-footer h4 a:hover {
-    text-decoration: underline;
+    border-bottom: 1px solid #43ba47;
+    color: #43ba47;
 }
 
 /* Drop the share links in the space to the right.

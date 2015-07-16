@@ -2,9 +2,16 @@
 @import url("typography.css");
 @import url("nav.css");
 @import url("grid.css");
+@import url("forms.css");
+@import url("prettyprint.css");
 
-.post-content {
-    /*overflow: hidden;*/
+
+/*------------------------------------*\
+    BUGFIX
+\*------------------------------------*/
+.read-next {
+    /* fixes a bug with horizontal scrollbars and flexbox */
+    overflow: hidden;
 }
 
 /*------------------------------------*\
@@ -30,6 +37,12 @@
 }
 .u-textLeft {
     text-align: left;
+}
+.u-textMuted {
+    color: #999 !important;
+}
+.u-textPadded {
+    padding: 0 3.8em 1em 3.8em;
 }
 
 .u-fullWidth {
@@ -65,7 +78,24 @@
 
 .post-template .Hero {
     background-image: url(/assets/img/hero-tour.png);
-    top: -270px;
+    top: -240px;
+}
+
+.home-template .Hero {
+    background-image: url(/assets/img/hero-home.png);
+    height: 1200px;
+    background-size: 2560px 1200px;
+}
+@media only screen and (max-width: 500px) {
+	.home-template .Hero {
+        background-position: -683px -78px;
+        display: none;
+	}
+}
+
+.tag-template .Hero {}
+.author-template .Hero {
+    top: -110px;
 }
 
 
@@ -87,55 +117,10 @@
     padding: 2.8em 0;
 }
 
-/*------------------------------------*\
-    FORM
-\*------------------------------------*/
-.Form {
-    margin: 0;
+.Module-title {
+    color: #000;
 }
 
-@media only screen and (min-width: 1024px) {
-    .Form--inlined {
-        text-align: center;
-    }
-}
-
-.Form-field {
-    border: 1px solid #D3D3D3;
-    border-radius: 2px;
-    padding: 12px;
-    font-size: 1.8rem;
-    line-height: 1;
-    height: 23px;
-}
-.Form-field:focus,
-.Form-field:active {
-    outline: none;
-    border: 1px solid #BCBCBC;
-}
-@media only screen and (min-width: 1024px) {
-    .Form-field--inlined {
-        width: 82%;
-    }
-}
-
-::-webkit-input-placeholder {
-    line-height: normal;
-    font-weight: normal;
-    color: #aaa;
-    font-size: 1.8rem;
-}
-
-
-::-moz-placeholder {
-    line-height: normal;
-    font-weight: normal;
-    color: #aaa;
-    font-size: 1.8rem;
-}
-:-ms-input-placeholder {
-    line-height: normal;
-    font-weight: normal;
-    color: #aaa;
-    font-size: 1.8rem;
+.Module-title--relatedItem {
+    margin: 0 0 -1.2em 0;
 }

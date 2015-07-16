@@ -5,9 +5,22 @@
     </a>
     <ul>
         {{#foreach navigation}}
-            <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+            <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation">
+                <a href="{{url absolute="true"}}">{{label}}</a>
+            </li>
         {{/foreach}}
+        <li class="" role="presentation">
+            <a href="http://www.cloud66.com/tour">Tour</a>
+        </li>
+        <li class="" role="presentation">
+            <a href="http://www.cloud66.com/features">Features</a>
+        </li>
+        <li class="" role="presentation">
+            <a href="http://www.cloud66.com/how-it-works">How it works</a>
+        </li>
+        <li class="" role="presentation">
+            <a href="http://www.cloud66.com/pricing">Pricing</a>
+        </li>
     </ul>
     <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
 </div>
-<span class="nav-cover"></span>

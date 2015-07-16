@@ -1,0 +1,112 @@
+/* Pretty printing styles. Used with prettify.js.
+ *
+ *
+ * Reference:
+ * http://code.google.com/p/google-code-prettify/source/browse/trunk/src/prettify.css
+ */
+
+.prettyprint .pln {
+  color: #48484C; }
+
+.prettyprint .str {
+  color: #DD1144; }
+
+.prettyprint .kwd {
+  color: #1E347B; }
+
+.prettyprint .com {
+  color: #93A1A1; }
+
+.prettyprint .typ {
+  color: teal; }
+
+.prettyprint .lit {
+  color: #195F91;
+}
+
+.prettyprint .pun {
+  color: #93A1A1;
+}
+
+.prettyprint .opn {
+  color: #93A1A1;
+}
+
+.prettyprint .clo {
+  color: #93A1A1;
+}
+
+.prettyprint .tag {
+  color: #008;
+}
+
+.prettyprint .atn {
+  color: teal;
+}
+
+.prettyprint .atv {
+  color: #DD1144;
+}
+
+.prettyprint .dec {
+  color: teal;
+}
+
+.prettyprint .var {
+  color: teal;
+}
+
+.prettyprint .fun {
+  color: #DC322F;
+}
+
+/* Put a border around prettyprinted code snippets. */
+pre.prettyprint.prettyprinted {
+	box-sizing: border-box;
+	background-color: rgba(0, 0, 0, 0.01);
+	border: 1px solid rgba(0, 0, 0, 0.09);
+	border-radius: 3px;
+    font-family: Inconsolata,monospace,sans-serif;
+	font-size: 1.5rem;
+    margin: 0 0 1.75em;
+    overflow: auto;
+    padding: 12px;
+    white-space: pre;
+    width: 100%;
+}
+
+pre.prettyprint.linenums {
+  box-shadow: 40px 0 0 #FBFBFC inset, 41px 0 0 #ECECF0 inset !important;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+.prettyprint ol.linenums {
+  color: #1E347B;
+  margin: 0 0 0 40px;
+}
+
+.prettyprint ol.linenums li {
+  color: #BEBEC5;
+  line-height: 18px;
+  padding-left: 12px;
+  text-shadow: 0 1px 0 #FFFFFF; }
+
+.prettyprint li.L0,
+.prettyprint li.L1,
+.prettyprint li.L2,
+.prettyprint li.L3,
+.prettyprint li.L5,
+.prettyprint li.L6,
+.prettyprint li.L7,
+.prettyprint li.L8 {
+  list-style-type: normal;
+}
+
+/* Alternate shading for lines */
+.prettyprint li.L1,
+.prettyprint li.L3,
+.prettyprint li.L5,
+.prettyprint li.L7,
+.prettyprint li.L9 {
+  background: #eee;
+}

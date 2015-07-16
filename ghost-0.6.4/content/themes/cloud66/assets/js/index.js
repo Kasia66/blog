@@ -1,8 +1,4 @@
 /**
- * Main JS file
- */
-
-/**
 * C66 blog Namespace
 */
 var C66 = window.C66 || {};
@@ -48,16 +44,10 @@ C66.blog = (function ( $, window ) {
 /* globals jQuery, document */
 /* default ghost theme */
 (function( $ ) {
-    "use strict";
-
-    var $document = $(document);
-
-
-    $document.ready(function () {
+    $(document).ready(function () {
         C66.blog.init();
-        // $(".scroll-down").arctic_scroll();
+        $(".scroll-down").arctic_scroll();
     });
-
 })(jQuery);
 
 
