@@ -15,7 +15,7 @@
   /* [2] */
   padding: 0;
   /* [2] */
-  margin-left: -24px;
+  margin-left: -26px;
   /* [3] */
 }
 
@@ -29,7 +29,7 @@
 .grid__item {
   display: inline-block;
   /* [1] */
-  padding-left: 24px;
+  padding-left: 26px;
   /* [2] */
   vertical-align: top;
   /* [3] */
