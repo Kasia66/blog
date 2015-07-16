@@ -1087,6 +1087,18 @@ body.nav-opened .nav {
     padding-right: 1em;
     color: #43ba47 !important;
 }
+@media only screen and (max-width : 1024px) {
+    .post-template .post-title {
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .post-template .post-title {
+        font-size: 2.2rem;
+        font-weight: 500;
+        padding-right: 0;
+    }
+}
 
 .post-template .post-meta {
     margin: 0;
@@ -1102,8 +1114,13 @@ body.nav-opened .nav {
    creating horizontal scroll - slight hack due to imperfections
    with browser width % calculations and rounding */
 .post-template .content {
-    padding-top: 200px;
+    padding-top: 60px;
     overflow: hidden;
+}
+@media only screen and (min-width : 1024px) {
+    .post-template .content {
+        padding-top: 200px;
+    }
 }
 
 /* Tweak the .post wrapper style */
@@ -1344,13 +1361,14 @@ body.nav-opened .nav {
 }
 
 .author-bio {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 1.5em;
     font-weight: 200;
     color: #50585D;
     letter-spacing: 0;
     text-indent: 0;
 }
+
 
 .author-meta {
     margin: 1.6rem 0;

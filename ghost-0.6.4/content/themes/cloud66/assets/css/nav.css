@@ -42,7 +42,7 @@
 /* mobile displays */
 @media only screen and (max-width: 500px) {
 	.NavGlobal {
-		padding: 0 20px 0 116px;
+		padding: 0 12px 0 116px;
 	}
 }
 
@@ -58,6 +58,13 @@
 	height: 54px;
 	width: 54px;
 	text-indent: -99999px;
+}
+
+@media only screen and (max-width: 500px) {
+	.Banner-logo {
+		top: 25px;
+		left: 12px;
+	}
 }
 
 
