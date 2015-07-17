@@ -98,7 +98,7 @@
 	font-family: "Montserrat",sans-serif;
 	display: block;
 	font-size: 1.6rem;
-	/*line-height: 87px;*/
+	outline: 0 !important;
 }
 @media only screen and (min-width : 1024px) {
 	.NavPrimary-link {
