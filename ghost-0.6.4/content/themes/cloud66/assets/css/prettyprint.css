@@ -110,3 +110,105 @@ pre.prettyprint.linenums {
 .prettyprint li.L9 {
   background: #eee;
 }
+
+
+/*
+    Darker theme for prettify
+*/
+
+
+.prettyprint.prettyprinted.dark {
+  background-color: rgba(35, 40, 48, 1);
+  border: 1px solid #15171D;
+}
+
+.prettyprinted.dark .pln {
+  color: #fff;
+}
+
+@media screen {
+  .prettyprinted.dark .str {
+    color: #73BA70;
+  }
+
+  .prettyprinted.dark .kwd {
+    color: #FFC987;
+  }
+
+  .prettyprinted.dark .com {
+    color: #969896;
+  }
+
+  .prettyprinted.dark .typ {
+    color: #83BDFF;
+  }
+
+  .prettyprinted.dark .lit {
+    color: #de935f;
+  }
+
+  .prettyprinted.dark .pun {
+    color: #c5c8c6;
+  }
+
+  .prettyprinted.dark .opn {
+    color: #c5c8c6;
+  }
+
+  .prettyprinted.dark .clo {
+    color: #c5c8c6;
+  }
+
+  .prettyprinted.dark .tag {
+    color: #cc6666;
+  }
+
+  .prettyprinted.dark .atn {
+    color: #de935f;
+  }
+
+  .prettyprinted.dark .atv {
+    color: #8abeb7;
+  }
+
+  .prettyprinted.dark .dec {
+    color: #de935f;
+  }
+
+  .prettyprinted.dark .var {
+    color: #cc6666;
+  }
+
+  .prettyprinted.dark .fun {
+    color: #81a2be;
+  }
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+.prettyprint.dark ol.linenums {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* IE indents via margin-left */
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L4,
+li.L5,
+li.L6,
+li.L7,
+li.L8,
+li.L9 {
+  /* */
+}
+
+/* Alternate shading for lines */
+li.L1,
+li.L3,
+li.L5,
+li.L7,
+li.L9 {
+  /* */
+}
