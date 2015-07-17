@@ -361,6 +361,12 @@ pre {
     border-radius: 3px;
 }
 
+.dark {
+    background-color: rgba(35, 40, 48, 1);
+    color: #fff;
+    border: 1px solid #15171D;
+}
+
 pre code, pre tt {
     font-size: inherit;
     white-space: pre-wrap;
@@ -933,6 +939,8 @@ body.nav-opened .nav {
     animation: fade-in-down 0.6s;
     -webkit-animation-delay: 0.2s;
     animation-delay: 0.2s;
+    font-size: 3.4rem;
+    font-weight: 500;
 }
 .home-template .page-description {
     -webkit-animation: fade-in-down 0.9s;
