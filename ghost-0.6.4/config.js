@@ -11,15 +11,26 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'http://blog.cloud66.com',
-        mail: {},
-        database: {
-            client: 'sqlite3',
-            connection: {
-                filename: path.join(__dirname, '/content/data/ghost.db')
-            },
-            debug: false
+        mail: {
+          transport: 'SMTP',
+          options: {
+            service: 'Postmark',
+            auth: {
+              user: process.env.POSTMARK_API,
+              pass: process.env.POSTMARK_API
+            }
+          }
         },
-
+        database: {
+            client: 'mysql',
+            connection: {
+                host     : '127.0.0.1',
+                user     : process.env.MYSQL_USERNAME,
+                password : process.env.MYSQL_PASSWORD,
+                database : 'ghost',
+                charset  : 'utf8'
+            }
+        },
         server: {
             // Host to be passed to node's `net.Server#listen()`
             host: '127.0.0.1',
