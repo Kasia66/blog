@@ -1567,7 +1567,7 @@ body.nav-opened .nav {
 }
 
 .pagination a {
-    color: #9EABB3;
+    /*color: #9EABB3;*/
     transition: all 0.2s ease;
 }
 
@@ -1577,7 +1577,7 @@ body.nav-opened .nav {
     position: absolute;
     display: inline-block;
     padding: 0 15px;
-    border: #bfc8cd 1px solid;
+    /*border: #bfc8cd 1px solid;*/
     text-decoration: none;
     border-radius: 4px;
     transition: border 0.3s ease;
