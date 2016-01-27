@@ -43,7 +43,7 @@ h6 {
 .post-content h4,
 .post-content h5,
 .post-content h6 {
-    color: #43ba47 !important;
+    color: #333 !important;
 }
 
 /* overide legacy content  */
@@ -72,11 +72,11 @@ h3 {
 /*  ---------------------------------------------- */
 a {
     @include transition (color 0.8s ease 0s);
-    color:  #43BA47;
+    color:  #0088cc;
     text-decoration: none;
 }
 a:hover {
-    color:  #43BA47;
+    color:  #23527c;
     text-decoration: none;
 }
 

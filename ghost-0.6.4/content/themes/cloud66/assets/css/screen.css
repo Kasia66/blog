@@ -902,7 +902,7 @@ body.nav-opened .nav {
     font-size: 3.3rem;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
-    color: #43ba47;
+    color: #333;
     line-height: 1.4;
 }
 
@@ -1021,7 +1021,6 @@ body.nav-opened .nav {
 
 .post-meta a:hover {
     text-decoration: none;
-    border-bottom: 1px solid #43BA47;
 }
 
 .user-meta {
@@ -1093,7 +1092,7 @@ body.nav-opened .nav {
     font-size: 4.8rem;
     font-weight: 600;
     padding-right: 1em;
-    color: #43ba47 !important;
+    color: #333 !important;
 }
 @media only screen and (max-width : 1024px) {
     .post-template .post-title {
@@ -1230,8 +1229,7 @@ body.nav-opened .nav {
 }
 
 .post-footer h4 a:hover {
-    border-bottom: 1px solid #43ba47;
-    color: #43ba47;
+    color: #2e2e2e;
 }
 
 /* Drop the share links in the space to the right.
@@ -1473,7 +1471,7 @@ body.nav-opened .nav {
     font-size: 1.1rem;
     font-family: 'Montserrat', sans-serif;
     color: rgba(255,255,255,0.8);
-    border: rgba(255,255,255,0.5) 1px solid;
+    /*border: rgba(255,255,255,0.5) 1px solid;*/
     border-radius: 4px;
     transition: all 0.5s ease;
 }
@@ -1507,7 +1505,8 @@ body.nav-opened .nav {
 }
 
 .read-next-story.no-cover h2 {
-    color: rgba(0,0,0,0.8);
+    /*color: rgba(0,0,0,0.8);*/
+    color: #0088cc;
 }
 
 .read-next-story.no-cover p {
@@ -2073,6 +2072,45 @@ body.nav-opened .nav {
 }
 
 
+/* ==========================================================================
+   13. Footer
+   ========================================================================== */
+.Section-footer {
+    margin: 0 auto;
+    width: 980px;
+    font-family: "Montserrat",sans-serif;
+}
+.FooterList-title {
+    font-size: 16px;
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+.FooterList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.FooterList-item {
+    line-height: 1;
+    text-align: left;
+}
+.FooterList-link {
+    font-family: "Montserrat",sans-serif;
+    font-size: 14px;
+    .fa {
+        display: inline-block;
+        min-width: 22px;
+    }
+}
+.SiteFooter-navLegal {
+    margin-top: 3em;
+    font-size: 11px;
+}
+.SiteFooter-navLegal a {
+    color: #333333;
+    font-size: 1.1rem;
+    margin: 0 0.4rem;
+}
 
 /* ==========================================================================
    13. Animations

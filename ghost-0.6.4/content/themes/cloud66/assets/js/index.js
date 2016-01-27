@@ -24,6 +24,7 @@ C66.blog = (function ( $, window ) {
     };
 
     var bindEvents = function() {
+        console.log('bindEvents method');
         if ( $(window).width() > 1023 ) {
             $document.scroll(function() {
                 config.$bannerEl.toggleClass( config.bannerScrollClass, $document.scrollTop() >= config.amountToScoll );
@@ -35,6 +36,10 @@ C66.blog = (function ( $, window ) {
             e.preventDefault();
             $("body").toggleClass("nav-opened nav-closed");
         });
+
+         if ( $(window).scrollTop() > 0 ) {
+             $('#js_banner').addClass('Banner--hasScrolled');
+         }
     };
 
     /* public methods */
