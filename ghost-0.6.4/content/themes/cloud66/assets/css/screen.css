@@ -2091,18 +2091,19 @@ body.nav-opened .nav {
     padding: 0;
 }
 .FooterList-item {
-    line-height: 1;
+    line-height: 1.2;
     text-align: left;
 }
 .FooterList-link {
     font-family: "Montserrat",sans-serif;
     font-size: 14px;
-    .fa {
-        display: inline-block;
-        min-width: 22px;
-    }
+}
+.FooterList-link .fa {
+    display: inline-block;
+    min-width: 22px;
 }
 .SiteFooter-navLegal {
+    text-align: center;
     margin-top: 3em;
     font-size: 11px;
 }
@@ -2111,6 +2112,7 @@ body.nav-opened .nav {
     font-size: 1.1rem;
     margin: 0 0.4rem;
 }
+
 
 /* ==========================================================================
    13. Animations
