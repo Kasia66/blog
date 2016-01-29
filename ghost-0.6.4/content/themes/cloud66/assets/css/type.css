@@ -69,10 +69,9 @@ h3 {
 }
 
 /*  ---------------------------------------------- */
-/*   LINKS
+/*   DEFAULT LINKS
 /*  ---------------------------------------------- */
 a {
-    @include transition (color 0.8s ease 0s);
     color:  #0088cc;
     text-decoration: none;
 }
