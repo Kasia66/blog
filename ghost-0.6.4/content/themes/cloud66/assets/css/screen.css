@@ -1277,8 +1277,9 @@ body.nav-opened .nav {
     font-size: 1.4rem;
 }
 .Tags > a {
-    padding: 1px 14px;
+    padding: 0 14px;
     display: inline-block;
+    margin: 4px;
     background: rgba(0, 0, 0, 0.05);
     color: rgba(0, 0, 0, 0.6);
     border-radius: 2px;
