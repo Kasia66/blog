@@ -4,19 +4,27 @@
 
         <ul class="NavPrimary  NavPrimary--marketing  u-objLeft">
             <li class="NavPrimary-item">
-                <a class="NavPrimary-link" href="http://www.cloud66.com/tour">Product Tour</a>
+                <a href="http://cloud66.com/why-cloud66"  class="NavPrimary-link <% if @template_name == 'why-cloud66' %> active<%end%>">
+                    Why Cloud 66?
+                </a>
             </li>
             <li class="NavPrimary-item">
-                <a class="NavPrimary-link" href="http://www.cloud66.com/features">Features</a>
+                <a href="http://cloud66.com/products"  class="NavPrimary-link <% if @template_name == 'products' || @template_name == 'rails' || @template_name == 'docker' %> active<%end%>">
+                    Products
+                </a>
             </li>
             <li class="NavPrimary-item">
-                <a class="NavPrimary-link" href="http://www.cloud66.com/how-it-works">How it Works</a>
+                <a href="http://cloud66.com/features"  class="NavPrimary-link <% if @template_name == 'features' %> active<%end%>">
+                    Features
+                </a>
             </li>
             <li class="NavPrimary-item">
                 <a class="NavPrimary-link is-active" href="/">Blog</a>
             </li>
             <li class="NavPrimary-item">
-                <a class="NavPrimary-link" href="http://www.cloud66.com/pricing">Pricing</a>
+                <a href="http://cloud66.com/pricing"   class="NavPrimary-link <% if @template_name == 'pricing' %> active<%end%>">
+                    Pricing
+                </a>
             </li>
         </ul>
 
