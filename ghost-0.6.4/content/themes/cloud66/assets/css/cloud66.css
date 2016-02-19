@@ -177,5 +177,40 @@
 }
 
 .Subscribe  .Button {
-    transition: none !important;
+    transition: none;
+}
+
+/*------------------------------------*\
+    COVER IMAGE
+\*------------------------------------*/
+.CoverImage {
+    position: relative;
+    height: 20em;
+    background-position: 50% bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 102px 0 2em 0;
+}
+/* > 1024px */
+@media only screen and (min-width : 1025px) {
+    .CoverImage  {
+       padding: 0 16em;
+    }
+}
+/* < 1024px */
+@media only screen and (max-width : 1024px) {
+    .CoverImage  {
+       border: 1px solid red;
+    }
+}
+
+.CoverImage-title {
+    color: #fff;
+    text-align: center;
+}
+
+
+.CoverImage--index {
+    padding-top: 10em;
+    background-image: url("/assets/img/covers/index.jpg");
 }
