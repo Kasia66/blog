@@ -87,7 +87,7 @@
 }
 
 .home-template .Hero {
-    background-image: url(/assets/img/hero-home.png);
+    /*background-image: url(/assets/img/hero-home.png);*/
     height: 1200px;
     background-size: 2560px 1200px;
 }
@@ -185,7 +185,7 @@
 \*------------------------------------*/
 .CoverImage {
     position: relative;
-    height: 20em;
+    height: 12em;
     background-position: 50% bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -200,7 +200,7 @@
 /* < 1024px */
 @media only screen and (max-width : 1024px) {
     .CoverImage  {
-       height: 12em;
+       height: 10em;
     }
 }
 
