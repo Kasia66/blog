@@ -2152,6 +2152,8 @@ body.nav-opened .nav {
     margin: 0 0.4rem;
 }
 
+/* < 1024px */
+
 @media only screen and (max-width : 1024px) {
     .FooterCols {
         padding: 0 12px;

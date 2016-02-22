@@ -69,7 +69,7 @@
     Absolutely Positioned  bg image
 \*------------------------------------*/
 .Hero {
-    background-image: url(/assets/img/hero-tour.png);
+    /*background-image: url(/assets/img/hero-tour.png);*/
     position: absolute;
     top: 0;
 	left: 0;
@@ -200,7 +200,7 @@
 /* < 1024px */
 @media only screen and (max-width : 1024px) {
     .CoverImage  {
-       border: 1px solid red;
+       height: 12em;
     }
 }
 
@@ -209,8 +209,19 @@
     text-align: center;
 }
 
-
 .CoverImage--index {
-    padding-top: 10em;
+    padding-top: 12em;
     background-image: url("/assets/img/covers/index.jpg");
+}
+
+.CoverImage-titleInner {
+    background: rgba(0,0,0,0.45);
+    padding: 4px;
+}
+
+/* < 1024px */
+@media only screen and (max-width : 1024px) {
+    #site-footer {
+        display: none;
+    }
 }
