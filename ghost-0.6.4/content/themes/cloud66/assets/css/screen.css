@@ -494,12 +494,19 @@ margin on the iframe, cause it breaks stuff. */
 
 /* Wraps the main content & footer */
 .site-wrapper {
+    overflow-x: hidden;
     position: relative;
     /*z-index: 10;*/
     min-height: 100%;
     /*background: #fff;*/
     -webkit-transition: -webkit-transform 0.5s ease;
             transition: transform 0.5s ease;
+}
+
+.footer-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
 }
 
 body.nav-opened .site-wrapper {
@@ -2160,6 +2167,10 @@ body.nav-opened .nav {
     }
     .FooterList {
         margin-bottom: 1em;
+    }
+    .SiteFooter-navLegal {
+        padding: 0 12px;
+        text-align: left;
     }
 }
 @media only screen and (max-width: 500px) {

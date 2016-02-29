@@ -193,25 +193,30 @@
 }
 /* > 1024px */
 @media only screen and (min-width : 1025px) {
-    .CoverImage  {
+    .CoverImage {
        padding: 0 16em;
     }
 }
 /* < 1024px */
 @media only screen and (max-width : 1024px) {
-    .CoverImage  {
-       height: 10em;
+    .CoverImage {
+       height: 8em;
     }
 }
 
 .CoverImage-title {
     color: #fff;
     text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .CoverImage--index {
     padding-top: 12em;
     background-image: url("/assets/img/covers/index.jpg");
+}
+/* > 1024px */
+@media only screen and (min-width : 1025px) {
+
 }
 
 .CoverImage-titleInner {
@@ -221,7 +226,15 @@
 
 /* < 1024px */
 @media only screen and (max-width : 1024px) {
-    #site-footer {
-        display: none;
+    .CoverImage--index {
+        padding-top: 9em;
+    }
+    .CoverImage-title {
+        font-size: 20px;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    h2.CoverImage-title {
+        font-size: 16px;
     }
 }
