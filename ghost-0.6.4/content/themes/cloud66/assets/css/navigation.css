@@ -9,6 +9,7 @@
 
 .Banner {
 	position: relative;
+	background: rgba(255,255,255,0.9);
 }
 
 /* Fixed position banner */
@@ -86,7 +87,10 @@
 	display: inline-block;
 	list-style: none;
 	padding: 0;
-	margin: 0 0 0 0;
+	margin: 0;
+}
+.NavPrimary--marketing {
+	margin-left: -11px;
 }
 
 .NavPrimary-item {
@@ -95,15 +99,11 @@
 }
 
 .NavPrimary-link {
-	font-family: "Montserrat",sans-serif;
+	font-family: "Montserrat", sans-serif;
 	display: block;
-	font-size: 1.6rem;
+	font-size: 1.5rem;
 	outline: 0 !important;
-}
-@media only screen and (min-width : 1024px) {
-	.NavPrimary-link {
-		line-height: 87px;
-	}
+	line-height: 66px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -155,17 +155,17 @@
 }
 
 
-.Banner--hasScrolled .NavPrimary-link {
+.NavPrimary-link {
 	line-height: 66px;
 }
-.Banner--hasScrolled .Banner-logo {
+.Banner-logo {
 	transition: all 0.15s ease-in;
 	top: 18px;
 	left: 40px;
 	height: 44px;
 	width: 44px;
 }
-.Banner--hasScrolled .NavPrimary-item--button {
+.NavPrimary-item--button {
 	transition: all 0.15s ease-in;
 	padding-top: 12px;
 	padding-right: 0;
